@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+                text-align: center;
+                width: 100%;
+                overflow-x: hidden;
+        }
+        .click-target {
+            cursor: pointer;
+        }
+        .module_hidden{
+            display: none;
+        }
+        /* .module_content{
+            display: block;
+        } */
+        .title-content {
+        vertical-align: middle;
+        border-bottom:1px black solid;
+        background-color: rgb(32, 32, 32);
+        color: rgba(240, 255, 255, 0.92);
+        padding:1rem;
+        margin:0;
+            }
+        .title-content:hover{
+            background-color:white;
+            color:rgb(32, 32, 32);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="expanding-tab tab01">
+            <div class="title-content">
+                <h2 class="click-target">Cleansing</h2>
+            </div>
+            <div class="module_hidden" id="module_1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aperiam aut possimus, enim nulla odio impedit velit cumque quae et nesciunt obcaecati doloremque eius maiores quas excepturi harum ratione? In.</p>
+            </div>
+        </section>
+        <section class="expanding-tab tab02">
+            <div class="title-content">
+            <h2 class="click-target"> Moisturizing & Sunscreen</h2>
+            </div>
+            <div class="module_hidden" id="module_2">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aperiam aut possimus, enim nulla odio impedit velit cumque quae et nesciunt obcaecati doloremque eius maiores quas excepturi harum ratione? In.</p>
+                </div>
+        </section>
+        <section class="expanding-tab tab03">
+            <div class="title-content">
+            <h2 class="click-target">Miscellaneous</h2>
+            </div>
+            <div class="module_hidden" id="module_3">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aperiam aut possimus, enim nulla odio impedit velit cumque quae et nesciunt obcaecati doloremque eius maiores quas excepturi harum ratione? In.</p>
+                </div>
+        </section>
+    </main>
+    <script>
+        var module_click = document.querySelectorAll(".title-content");
+        var clicky = document.querySelectorAll(".click-target");
+        var module = document.querySelectorAll(".module_hidden");
+
+     
+        
+//Accordion 
+        clicky.forEach(element=>{
+            element.addEventListener('click',function(){
+                console.log(element);
+            
+                this.parentElement.nextElementSibling.classList.toggle('module_hidden');
+        
+
+            })
+
+        });
+
+
+
+        // var module = this.nextElementSibling;    
+        //     module.classList.toggle('module_hidden');
+        
+    </script>
+</body>
+</html>

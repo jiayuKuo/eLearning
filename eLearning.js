@@ -31,4 +31,4 @@ next_btn.addEventListener('click',function(){
     question_2.classList.remove('hidden');
 })
 // skinType function
-// math 
+

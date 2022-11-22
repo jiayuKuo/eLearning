@@ -7,7 +7,7 @@
             <article>
             <h1> Who We Are?</h1>
 
-            <h2>I am MAX</h2>
+            <h2>I am MAX - </h2>
 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quidem veniam ipsam voluptatem inventore rem harum vel odio esse at vitae, earum odit sed dolores recusandae labore repellat ex consectetur.</p>
             <p>Id pariatur cupiditate eos? Ipsam suscipit fugit est nobis earum asperiores, maiores, consectetur error ad ipsa sequi, aliquid ex atque modi! Possimus sint tempora, repellendus quos eum exercitationem libero nihil!</p>

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --white : #fff;
+    --dark: #292E34;
+    --gray:#838383;
+    --orange:#E27C51;
+    --green:#68CC64;
+    --blue:#516DE2;
+   
+}
+html,body,header{
+    padding: 0;
+    margin: 0 auto;
+    /* max-width: 100ch; */
+    font-family: 'Space Grotesk', Arial, sans-serif; 
+
+}
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    position: absolute; 
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+     
+}
+nav{
+    display:flex;
+  justify-content:space-between;
+  /* border:1px red solid; */
+  align-items:center;
+}
+header ul{
+    display:flex;
+    /* border:1px red solid; */
+    justify-content:flex-end;
+    padding:0;
+    width:60ch;
+
+}
+header li{
+    list-style-type:none;
+    /* border:1px red solid; */
+    padding:0 1rem;
+
+}
+header li a{
+    text-decoration: none;
+    color:var(--white);
+    
+    align-items:center;
+}
+header img{
+    width: 25vw;
+    height: auto;
+}
+li a:after{
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--white);
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+li a:hover:after{
+    transform:scaleX(1);
+}
+/* main */
+main, footer{
+    max-width: 100ch;
+    margin: 0 auto;
+    padding-bottom: 15vh;
+  
+}
+h1{
+    font-size: clamp(2.125rem, 1.0313rem + 3.5vw, 3rem);
+    word-wrap: break-word;
+    text-align: center;
+}
+/* heropage */
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero_image_2.jpg");
+        height: 60vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+/* about us */
+#aboutUs div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6rem;
+    padding:10vh 0;   
+}
+h2{
+    text-align: center;
+}
+/* botton */
+.big_btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-16 {
+    border: 2px var(--green) solid;
+    color: var(--dark);
+    background-color:var(--white) ;
+    
+  }
+  .btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .btn-16:hover {
+    color: var(--white);
+    background-color:var(--green) ;
+   
+  }
+  .btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .btn-16:active {
+    top: 2px;
+  }
+
+/* skin quiz */
+#skinQuiz div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #skinQuiz button{
+    background: var(--blue);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+} */
+
+.hidden{
+    display:none;
+}
+fieldset{
+    border: none;
+}
+/* skin quiz question card */
+#question{
+    border:2px var(--dark) solid;
+    border-radius: .5rem;
+    background-color:var(--white);
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top:150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding:1.5rem;
+}
+
+
+/* module */
+#module{
+        
+        width: 100%;
+        overflow-x: hidden;
+}
+.click-target {
+    cursor: pointer;
+}
+.module_hidden{
+    display: none;
+}
+.title-content {
+vertical-align: middle;
+border-bottom:1px black solid;
+background-color: rgb(32, 32, 32);
+color: rgba(240, 255, 255, 0.92);
+padding:1rem;
+margin:0;
+    }
+    /* .title-content h2{
+        text-align: center;
+    }   */
+.title-content:hover{
+    background-color:white;
+    color:rgb(32, 32, 32);
+}
+/* footer */
+footer{
+ margin: 0 auto;   
+ border-top: 1px var(--gray) solid;
+ color: var(--gray);
+ text-align: center;
+}
+footer img{
+    width: 10%;
+}

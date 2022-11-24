@@ -66,6 +66,9 @@ include('header.php');
             </div>
        
 </section>
-<!-- <script src="eLearning.js"></script> -->
+<script src="cookie.js"></script>
+<script src="module.js"></script>
+
+
 <?php include('footer.php');
 ?>

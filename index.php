@@ -34,10 +34,10 @@
             </div>
              <!-- skin type quiz and create a cookie to store skin type-->  
         </section>
-<!-- Ask dan how to do it use button to switch back / show next contant -->
+
         <section id="question" class="hidden">
           
-            <a href=""><img src="" alt=""></a>
+            
             <button id="close_Btn" class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
             <h2>What Is Your Skin Type?</h2>
             <p>It’s something you probably do every day, but are you actually maintaining your skin properly... </p>
@@ -77,14 +77,45 @@
 
             
             </form>
-            <button class="big_btn" id="back_btn">Back</button>
+            <div class="btn_container">
+            <button class="big_btn" id="back_btn" disabled>Back</button>
             <button class="big_btn" id="next_btn">Next</button>
+            </div>
 
 
         </section>
 
 
-       
+      
     </main>
+   <script src="skinQuiz_btn.js"></script>
+   <script src="cookie.js"></script>
+    <script>
+
+// skinType function :use like coffee count number if score is 1-5 dry 6-10 is normal; 11-15 is oil
+
+// var total=0;
+// skinType.addEventListener('change', function(){
+    // var q1Score = document.querySelector('input[name="q1"]:checked').value;
+    // var q2Score = document.querySelector('input[name="q2"]:checked').value;
+    // var q3Score = document.querySelector('input[name="q3"]:checked').value;
+    // var q4Score = document.querySelector('input[name="q4"]:checked').value;
+    // q1Score = parseInt(q1Score);
+    // q2Score = parseInt(q2Score);
+    // q3Score = parseInt(q3Score);
+    // q4Score = parseInt(q4Score);
+    // //use this way that allows total user 
+    // total=q1Score+q2Score+q3Score+q4Score; 
+   
+    // console.log(total);
+
+// })
+//once got the number , show different messasge and set cookie
+
+
+
+
+
+    </script>
     <?php include('footer.php');
 ?>

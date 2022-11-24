@@ -186,7 +186,16 @@ fieldset{
     transform: translate(-50%,-50%);
     padding:1.5rem;
 }
+.btn_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
 
+}
+.btn_container button{
+    margin: 0 2rem;
+
+}
 
 /* module */
 #module{
